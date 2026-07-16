@@ -7,16 +7,18 @@ use reqwest::Client;
 #[derive(Debug, AsRef, clap::Parser)]
 struct Args {
     /// Specify the upstream repo to fetch the binary
-    #[clap(default_value = "https://github.com/Jabba-Team/jabba")]
+    #[clap(long, default_value = "https://github.com/Jabba-Team/jabba")]
     jabba_repo: String,
 
     /// Select the version of jabba to download
+    #[clap(long)]
     jabba_version: Option<String>,
 
     /// Specify the output directory to put jabba-noshim binary.
     ///
     /// If not specified then the tool must be ran by cargo and the path will be inferred
     /// based on the current executable path
+    #[clap(long)]
     output_dir: Option<String>,
 
     #[clap(flatten)]

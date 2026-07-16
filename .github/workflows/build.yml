@@ -27,10 +27,10 @@ jobs:
         with:
           rust: stable
           rust-native: ${{ matrix.target }}
-      - run: cargo run --bin jabba-download --jabba-version 0.15.0
-      - if: runner.os == "Linux"
+      - run: cargo run --bin jabba-download -- --jabba-version 0.15.0
+      - if: runner.os == 'Linux'
         run: task check
-      - if: runner.os == "Linux"
+      - if: runner.os == 'Linux'
         run: task test
       - uses: Pistonight/mono-dev/actions/rust-xplat@main
         with:
