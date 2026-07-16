@@ -1,0 +1,3 @@
+jabba-*
+/bin
+/tests/help_snapshots/*.actual

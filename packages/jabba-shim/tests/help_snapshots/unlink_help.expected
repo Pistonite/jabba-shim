@@ -1,0 +1,9 @@
+Delete a link
+
+Usage: jabba unlink <NAME>
+
+Arguments:
+  <NAME>  Name of the link to delete
+
+Options:
+  -h, --help  Print help

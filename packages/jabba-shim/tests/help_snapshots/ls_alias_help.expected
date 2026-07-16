@@ -1,0 +1,6 @@
+List configured aliases
+
+Usage: jabba ls-alias
+
+Options:
+  -h, --help  Print help

@@ -1,0 +1,16 @@
+Resolve or update a link
+
+SHIM: `current` cannot be used as the link name
+
+Usage: jabba link <NAME> [PATH]
+
+Arguments:
+  <NAME>
+          Name of the link to create or inspect
+
+  [PATH]
+          Target path of the JDK to link, omit to display the current link target
+
+Options:
+  -h, --help
+          Print help (see a summary with '-h')

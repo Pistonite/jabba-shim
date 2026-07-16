@@ -1,0 +1,19 @@
+Download and install JDK
+
+Examples:
+- jabba install 1.8
+- jabba install ~1.8.73 # same as ">=1.8.73 <1.9.0"
+- jabba install 1.8.73=dmg+http://.../jdk-9-ea+110_osx-x64_bin.dmg
+
+Usage: jabba install [OPTIONS] <VERSION>
+
+Arguments:
+  <VERSION>
+          The version to install
+
+Options:
+  -o, --output <OUTPUT>
+          Custom destination (if outside of $JABBA_HOME/jdk then it's considered unmanaged, i.e.e not available to jabba ls, use, etc.. unless jabba linked)
+
+  -h, --help
+          Print help (see a summary with '-h')

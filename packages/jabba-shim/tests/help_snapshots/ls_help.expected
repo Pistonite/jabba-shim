@@ -1,0 +1,7 @@
+List installed versions
+
+Usage: jabba ls [OPTIONS]
+
+Options:
+      --latest <LATEST>  Part of the version to trim to [possible values: major, minor, patch]
+  -h, --help             Print help

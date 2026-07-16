@@ -1,0 +1,10 @@
+Display path to installed JDK
+
+Usage: jabba which [OPTIONS] <VERSION>
+
+Arguments:
+  <VERSION>  Version to display
+
+Options:
+      --home  Account for platform differences so that value could be used as JAVA_HOME (e.g. append "/Contents/Home" on macOS)
+  -h, --help  Print help

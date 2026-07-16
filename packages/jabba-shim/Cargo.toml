@@ -1,0 +1,19 @@
+[package]
+name = "jabba-shim"
+version = "0.1.0"
+edition = "2024"
+description = "shim to use jabba the java version manager (https://github.com/Jabba-Team/jabba)"
+publish = false
+
+[dependencies]
+cu.workspace = true
+cu.features = ["cli", "process", "derive", "coroutine"]
+
+[[bin]]
+name = "jabba"
+path = "src/main.rs"
+
+[package.metadata.binstall.signing]
+algorithm = "minisign"
+pubkey = "RWThJQKJaXayoZBe0YV5LV4KFkQwcqQ6Fg9dJBz18JnpHGdf/cHUyKs+"
+

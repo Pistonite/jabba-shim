@@ -1,0 +1,16 @@
+Resolve or update an alias
+
+SHIM: Setting the `current` alias has the same effect as `use`
+
+Usage: jabba alias <NAME> [VERSION]
+
+Arguments:
+  <NAME>
+          Name of the alias to create or inspect
+
+  [VERSION]
+          Target version for this alias, omit to display the version bound to an alias
+
+Options:
+  -h, --help
+          Print help (see a summary with '-h')

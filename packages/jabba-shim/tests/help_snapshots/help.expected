@@ -1,0 +1,38 @@
+Java Version Manager (https://github.com/Jabba-Team/jabba) - Shimmed
+
+Usage: jabba [OPTIONS] [COMMAND]
+
+Commands:
+  alias      Resolve or update an alias
+  current    Display currently 'use'ed version
+  install    Download and install JDK
+  link       Resolve or update a link
+  ls         List installed versions
+  ls-alias   List configured aliases
+  ls-remote  List remote versiosn available for install
+  unalias    Delete an alias
+  uninstall  Uninstall JDK
+  unlink     Delete a link
+  use        Modify the `current` alias to use specific JDK
+  which      Display path to installed JDK
+  help       Print this message or the help of the given subcommand(s)
+
+Options:
+  -V, --version...
+          Show version of jabba
+          
+          Run with -vV to show the version for jabba-shim as well
+
+  -v, --verbose...
+          Verbose. More -v makes it more verbose (opposite of --quiet)
+
+  -q, --quiet...
+          Quiet. More -q makes it more quiet (opposite of --verbose)
+
+      --color <COLOR>
+          Set the color mode for this program. May affect subprocesses spawned
+          
+          [possible values: always, never, auto]
+
+  -h, --help
+          Print help (see a summary with '-h')

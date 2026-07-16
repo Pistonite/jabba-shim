@@ -1,0 +1,50 @@
+version: '3'
+
+env:
+  JABBA_HOME:
+    sh: echo "$(pwd)/jabba-home"
+
+includes:
+  common:
+    taskfile: ./mono-dev/task/common.yaml
+    optional: true
+    flatten: true
+
+  shim: { taskfile: packages/jabba-shim,       dir: packages/jabba-shim,     internal: true }
+  down: { taskfile: packages/jabba-download,   dir: packages/jabba-download, internal: true }
+
+tasks:
+  install:
+    - rm -rf mono-dev
+    - git clone https://github.com/Pistonight/mono-dev --depth 1
+    - cargo run --bin jabba-download
+
+  jabba:
+    - cmd: cargo build --bin jabba --quiet
+    - cmd: target/debug/jabba {{.CLI_ARGS}}
+      silent: true
+
+  update-snapshot:
+    aliases: [us]
+    cmds:
+      - UPDATE_SNAPSHOTS=1 cargo test -p jabba-shim --test help_snapshot
+
+  test:
+    - cargo test
+
+  check:
+    - task: down:check
+    - task: shim:check
+
+  fix:
+    - cargo fmt
+
+  publish:
+    vars:
+      VERSION:
+        sh: grep -E '^version =' packages/jabba-shim/Cargo.toml | head -n1 | sed -E 's/version = "([^"]+)"/\1/'
+    cmds:
+      - git tag v{{.VERSION}}
+      - git push origin v{{.VERSION}}
+
+

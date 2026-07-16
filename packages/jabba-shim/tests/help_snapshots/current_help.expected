@@ -1,0 +1,9 @@
+Display currently 'use'ed version
+
+SHIM: Reads the `current` alias instead of PATH
+
+Usage: jabba current
+
+Options:
+  -h, --help
+          Print help (see a summary with '-h')

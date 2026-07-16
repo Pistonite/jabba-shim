@@ -1,0 +1,9 @@
+List remote versiosn available for install
+
+Usage: jabba ls-remote [OPTIONS]
+
+Options:
+      --arch <ARCH>      Architecture [default: amd64] [possible values: amd64, 386]
+      --latest <LATEST>  Part of the version to trim to [possible values: major, minor, patch]
+      --os <OS>          Operating System [default: linux] [possible values: darwin, linux, windows]
+  -h, --help             Print help

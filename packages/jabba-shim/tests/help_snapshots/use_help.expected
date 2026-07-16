@@ -1,0 +1,17 @@
+Modify the `current` alias to use specific JDK
+
+SHIM: modifies `current` alias instead of PATH/JAVA_HOME
+
+Examples:
+- jabba use 1.8
+- jabba use ~1.8.73 # same as ">=1.8.73 <1.9.0"
+
+Usage: jabba use <VERSION>
+
+Arguments:
+  <VERSION>
+          Version to use
+
+Options:
+  -h, --help
+          Print help (see a summary with '-h')

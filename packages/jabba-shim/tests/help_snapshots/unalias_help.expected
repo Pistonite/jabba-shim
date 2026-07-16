@@ -1,0 +1,13 @@
+Delete an alias
+
+SHIM: `current` cannot be deleted
+
+Usage: jabba unalias <NAME>
+
+Arguments:
+  <NAME>
+          Name of the alias to delete
+
+Options:
+  -h, --help
+          Print help (see a summary with '-h')

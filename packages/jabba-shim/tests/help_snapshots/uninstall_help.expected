@@ -1,0 +1,9 @@
+Uninstall JDK
+
+Usage: jabba uninstall <VERSION>
+
+Arguments:
+  <VERSION>  Version to uninstall
+
+Options:
+  -h, --help  Print help
