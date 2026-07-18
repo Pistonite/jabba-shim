@@ -3,6 +3,7 @@ name = "jabba-shim"
 version = "0.1.0"
 edition = "2024"
 description = "shim to use jabba the java version manager (https://github.com/Jabba-Team/jabba)"
+repository = "https://github.com/Pistonite/jabba-shim"
 publish = false
 
 [dependencies]
