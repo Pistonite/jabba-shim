@@ -13,7 +13,7 @@ then use the unshimmed version (upstream jabba) directly.
 ## Installation
 Method 1: With `cargo-binstall` (recommended if you already have a Rust toolchain setup)
 ```
-cargo binstall jabba-shim --git https://github.com/Pistonight/jabba-shim
+cargo binstall jabba-shim --git https://github.com/Pistonite/jabba-shim
 ```
 This downloads the pre-built binaries from GitHub release
 
@@ -21,7 +21,7 @@ Method 2: Download manually from GitHub release and put the executable somewhere
 
 Method 3: Build from source (requires Rust toolchain)
 ```
-git clone https://github.com/Pistonight/jabba-shim
+git clone https://github.com/Pistonite/jabba-shim
 cd jabba-shim
 cargo run --bin jabba-download [-- --jabba-version 0.15.0]
 cargo build --bin jabba --release
