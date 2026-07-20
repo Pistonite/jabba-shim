@@ -1,6 +1,6 @@
 [package]
 name = "jabba-shim"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "shim to use jabba the java version manager (https://github.com/Jabba-Team/jabba)"
 publish = false
