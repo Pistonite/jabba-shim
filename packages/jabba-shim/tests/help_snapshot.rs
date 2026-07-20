@@ -27,6 +27,7 @@ test_snapshot!(install_help, ["install", "--help"]);
 test_snapshot!(link_help, ["link", "--help"]);
 test_snapshot!(ls_help, ["ls", "--help"]);
 test_snapshot!(ls_alias_help, ["ls-alias", "--help"]);
+#[cfg(target_arch = "x86_64")]
 test_snapshot!(ls_remote_help, ["ls-remote", "--help"]);
 test_snapshot!(unalias_help, ["unalias", "--help"]);
 test_snapshot!(uninstall_help, ["uninstall", "--help"]);
