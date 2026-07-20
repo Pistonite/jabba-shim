@@ -130,19 +130,27 @@ impl Latest {
 pub enum Arch {
     Amd64,
     _386,
+    Arm64,
+    Arm,
 }
 impl Arch {
     pub const fn as_str(self) -> &'static str {
         match self {
             Arch::_386 => "386",
             Arch::Amd64 => "amd64",
+            Arch::Arm64 => "arm64",
+            Arch::Arm => "arm",
         }
     }
 }
-#[cfg(target_pointer_width = "64")]
+#[cfg(target_arch = "x86_64")]
 static CURR_ARCH: &str = Arch::Amd64.as_str();
-#[cfg(target_pointer_width = "32")]
+#[cfg(target_arch = "x86")]
 static CURR_ARCH: &str = Arch::_386.as_str();
+#[cfg(target_arch = "aarch64")]
+static CURR_ARCH: &str = Arch::Arm64.as_str();
+#[cfg(target_arch = "arm")]
+static CURR_ARCH: &str = Arch::Arm.as_str();
 
 #[derive(Clone, Copy, clap::ValueEnum)]
 pub enum Os {

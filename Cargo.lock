@@ -794,7 +794,7 @@ dependencies = [
 
 [[package]]
 name = "jabba-shim"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "pistonite-cu",
 ]
@@ -1006,9 +1006,9 @@ checksum = "a89322df9ebe1c1578d689c92318e070967d1042b512afbe49518723f4e6d5cd"
 
 [[package]]
 name = "pistonite-cu"
-version = "0.9.1"
+version = "0.9.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6683442ea9adae2623b54d18cef26762ceb998fc5481369b9b0c15a97276b08f"
+checksum = "6176ade7af664060d5d3ba242cec7a4cc0d48e00004c14a519561a40e66e8898"
 dependencies = [
  "anyhow",
  "clap",
